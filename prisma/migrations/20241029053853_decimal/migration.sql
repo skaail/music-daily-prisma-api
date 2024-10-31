@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Album" ALTER COLUMN "nota" SET DATA TYPE DECIMAL(65,30);
