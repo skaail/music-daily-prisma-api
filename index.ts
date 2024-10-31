@@ -26,7 +26,14 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-export const io = new socketio.Server(httpServer);
+export const io = new socketio.Server(httpServer, {
+  cors: {
+    origin: '*', 
+    methods: 'GET,POST,PUT,DELETE, PATCH',      
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,    
+  }
+});
 
 app.use(express.json())
 
