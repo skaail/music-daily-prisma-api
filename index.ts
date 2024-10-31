@@ -18,9 +18,9 @@ dotenv.config()
 app.use(cors());
 
 const corsOptions = {
-  origin: '*', 
+  origin: 'https://music-daily-9yzw-4ti41ohee-brunogianinireadmorecoms-projects.vercel.app/', 
   methods: 'GET,POST,PUT,DELETE, PATCH',      
-  allowedHeaders: 'Content-Type,Authorization',
+  allowedHeaders: '*',
   credentials: true,                         
 };
 
